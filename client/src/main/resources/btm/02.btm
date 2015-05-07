@@ -1,0 +1,7 @@
+RULE 02
+CLASS com.redhat.byteman.thermostat.app.Application
+METHOD running
+AT EXIT
+IF true
+DO traceln("exiting running")
+ENDRULE

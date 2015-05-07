@@ -1,0 +1,7 @@
+RULE 01
+CLASS com.redhat.byteman.thermostat.app.Application
+METHOD running
+AT ENTRY
+IF true
+DO traceln("entering running")
+ENDRULE
